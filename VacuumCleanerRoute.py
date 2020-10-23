@@ -25,4 +25,12 @@ def vacuum(direction):
     return bool (not (x+y))
 
 if __name__ == "__main__":
-    print(vacuum("RLU"))
+    str1 = 'UDLRRULD' # true
+    str2 = 'DULLRDUDDLRU' # false
+    str3 = 'UDRLULDRULDRULDR' # true
+    str4 = '' # trivially true
+    
+    print(vacuum(str1))
+    print(vacuum(str2))
+    print(vacuum(str3))
+    print(vacuum(str4))
